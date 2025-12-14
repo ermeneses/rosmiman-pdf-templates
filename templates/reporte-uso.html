@@ -9,23 +9,23 @@
     </style>
   </head>
 
-  <body>
-    <header>
-      <h1>{{HEADER_TITLE}}</h1>
+  <body class="font-sans text-dark m-10">
+    <header class="flex items-center pb-6 mb-6 border-b-4 border-gold">
+      <h1 class="text-2xl font-bold tracking-wide">{{HEADER_TITLE}}</h1>
     </header>
 
-    <h2>{{SUBTITLE}}</h2>
+    <h2 class="text-gold text-xl mb-4">{{SUBTITLE}}</h2>
 
-    <table>
+    <table class="w-full border-collapse text-sm">
       <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Usuario</th>
-          <th>App</th>
-          <th>Prom. Min</th>
-          <th>% Efectivo</th>
-          <th>Accesos</th>
-          <th>Total Min</th>
+        <tr class="bg-dark text-white">
+          <th class="p-2 text-left border-b-2 border-gold">Nombre</th>
+          <th class="p-2 text-left">Usuario</th>
+          <th class="p-2 text-left">App</th>
+          <th class="p-2 text-left">Prom. Min</th>
+          <th class="p-2 text-left">% Efectivo</th>
+          <th class="p-2 text-left">Accesos</th>
+          <th class="p-2 text-left">Total Min</th>
         </tr>
       </thead>
 
@@ -34,6 +34,10 @@
       </tbody>
     </table>
 
-    <footer>{{FOOTER}}</footer>
+    <footer
+      class="fixed bottom-5 left-0 right-0 text-center text-xs text-gray-500"
+    >
+      {{FOOTER}}
+    </footer>
   </body>
 </html>
